@@ -1,0 +1,338 @@
+@mixin btn
+	display: block
+	max-width: 226px
+	border: 1px solid #ff2d2d
+	border-radius: 8px
+	padding: 20px 0
+	text-align: center
+	font-size: 18px
+	font-weight: 700
+	text-transform: none
+
+@mixin title 
+	font-size: 42px
+	font-weight: 700
+	color: #000
+
+@mixin text 
+	font-size: 16px
+	font-weight: 400
+	color: #000
+
+@mixin line
+	display: block
+	content: ''
+	background: #ff2d2d
+	width: 130px
+	height: 2px
+
+body 
+	color: #000
+	font-size: 16px
+	font-family: 'Open Sans', sans-serif
+
+ul, li 
+	padding: 0px
+	margin: 0px
+
+
+
+a, a:hover, a:active, a:focus,
+button, input, button:hover, button:active, button:focus 
+	text-decoration: none
+	outline: none
+
+
+p
+	margin: 0
+
+h1, h2, h3, h4,
+	text-transform: uppercase
+	font-weight: 700
+	margin: 0
+
+header
+	background: #f6f2f2
+	.nav 
+		background: #313030
+		.menu__main
+			display: block
+			margin: 0 auto
+			.menu
+				padding-top: 38px
+				li
+					list-style: none
+					margin-bottom: 30px
+					a
+						color: #fff
+						font-size: 14px
+						font-weight: 700
+						text-transform: uppercase
+						padding: 41px 25px 28px 25px
+						&:hover
+							background: red
+		.hamburger
+			display: none
+			margin: 30px auto
+			span
+				display: block
+				margin: 0 auto
+				margin-bottom: 6px
+				width: 33px
+				height: 3px
+				background: #fff
+			.hamburger__onactive
+				display: none
+				.hamburger__menu
+					margin-top: 40px
+					li
+						list-style: none
+						margin-bottom: 15px
+						a
+							color: #fff
+							font-size: 14px
+							font-weight: 700
+							text-transform: uppercase
+	h1
+		font-size: 60px
+		font-weight: 800
+		margin: 108px 0 37px 0
+	.header__text
+		font-size: 16px
+		font-weight: 400
+	.button 
+		@include btn
+		color: white
+		background: #ff2d2d
+		margin: 23px 0 146px 0 
+	.video
+		width: 510px
+		// max-height: 356px
+		margin: 103px 0 111px 0
+		box-shadow: -10px -30px 70px 12px #cdc9c9
+		outline: none
+
+
+.first
+	padding-top: 111px
+	border-bottom: 1px solid #ececec
+	h2
+		@include title
+	&__text
+		@include text
+		margin: 51px 0 57px 0
+	&__button
+		@include btn
+		color: #ff2d2d
+		&:hover
+			color: #ff2d2d
+	&__skill
+		flex-wrap: wrap
+		div
+			margin-bottom: 54px
+			img
+				max-width: 44px
+			h5
+				margin-top: 32px
+				font-size: 24px
+				font-weight: 600
+			p
+				width: 270px
+				font-size: 16px
+				font-weight: 400
+.second
+	h2
+		@include title
+		margin-top: 150px
+	&__text
+		@include text
+		margin-top: 36px
+		&:after
+			@include line
+			margin: 0 auto
+			margin-top: 27px
+			margin-bottom: 80px
+			
+	&__list
+		ul
+			list-style: none
+			li
+				text-transform: uppercase
+				font-size: 22px
+				font-weight: 600
+				margin: 0 29px
+				margin-bottom: 29px
+	&__block
+		height: 266px
+		max-width: 266px
+		background: #818181
+		margin-bottom: 19px
+
+.third
+	h2
+		@include title
+		margin-top: 120px
+		margin-bottom: 44px	
+	&__text
+		@include text
+		width: 500px
+		&:after
+			@include line
+			margin: 34px 0 70px 0
+	&__avatar
+		height: 436px
+		width: 321px
+		margin-bottom: 112px
+		img
+			width: 100%
+			height: 100%
+	h3
+		margin-top: 6px
+		font-size: 22px
+		font-weight: 600
+		margin-bottom: 36px
+	&__about
+		width: 632px
+		font-size: 16px
+		font-weight: 400
+		margin-bottom: 28px
+	&__list
+		ul
+			list-style: none
+			margin-bottom: 69px
+			li
+				margin-right: 30px
+				a
+					color: #000
+					font-size: 18px
+					font-weight: 400
+	&__avatars
+		div
+			width: 216px
+			height: 196px
+			margin-right: 22px
+			img
+				width: 100%
+				height: 100%
+				z-index: 1
+				position: relative
+
+			.men
+				display: none
+				position: absolute
+				z-index: 100
+				top: 376px
+.fourth
+	background: url(../img/background.jpg)  no-repeat center top
+	h2
+		@include title
+		margin-top: 140px
+		color: #fff
+		text-transform: none
+	p
+		@include text
+		margin: 38px 0 65px 0
+		color: #fff
+	&__search
+		margin-bottom: 134px
+		input
+			width: 512px
+			height: 79px
+			border-radius: 6px
+			color: #2c2c2c
+			font-style: 16px
+			font-weight: 400
+			padding-left: 37px
+			margin: 0 11px
+		.search__btn
+			display: block
+			border-radius: 6px
+			width: 214px
+			height: 79px
+			background: #ff2d2d
+			padding: 30px 57px
+			color: #fff
+			text-transform: uppercase
+			font-size: 18px
+			font-weight: 700
+			margin: 0 11px
+.fifth
+	h2
+		@include title
+		margin: 108px 0 52px 0
+	&__text
+		@include text
+		max-width: 724px
+		&:after
+			@include line
+			margin: 56px 0 76px 0
+	&__form
+		.form__inputs
+			.input__name
+				width: 288px
+				height: 69px
+			.input__mail
+				width: 288px
+				height: 69px
+				margin-left: 54px
+			input
+				background: #e5e5e5
+				border: none
+				border-radius: 6px
+				padding-left: 53px
+				font-size: 18px
+				font-weight: 400
+				margin-bottom: 47px
+		textarea
+			width: 100%
+			height: 249px
+			background: #e5e5e5
+			border: none
+			border-radius: 6px
+			padding: 35px 0 0 53px
+			font-size: 18px
+			font-weight: 400
+			outline: none
+			resize: none
+			margin-bottom: 47px
+		.form__block
+			input
+				width: 100%
+				height: 72px
+				background: #ff3b3b
+				border: none	
+				border-radius: 6px
+				color: #fff
+				font-size: 18px
+				font-weight: 700
+
+	&__contact
+		background: #2d2d2d
+		color: #fff
+		padding-left: 46px
+		h4
+			font-size: 18px
+			font-weight: 700
+			padding: 146px 0 40px 0
+		div
+			width: 285px
+			font-size: 16px
+			font-weight: 400
+			margin-bottom: 100px
+			span
+				display: block
+				margin-top: 30px
+			span:last-child 
+				padding-bottom: 127px
+footer
+	background: #313030
+	color: #b8b8b8
+	p
+		margin-top: 39px
+	.footer__list
+		margin: 31px 0
+		ul
+			list-style: none
+			a
+				padding-left: 18px
+

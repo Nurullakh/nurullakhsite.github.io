@@ -1,0 +1,286 @@
+@media (max-width: 1200px)
+	@mixin title 
+		font-size: 36px
+		font-weight: 700
+		color: #000
+	@mixin text 
+		font-size: 13px
+		font-weight: 400
+		color: #000
+
+	header
+		h1
+			font-size: 46px
+		.header__text
+			font-size: 13px
+		.button 
+			
+		.video
+			max-width: 100%
+			height: 305px
+
+	.first 
+		h2
+			@include title
+		&__text
+			@include text
+		&__skill
+			div
+				h5
+					font-size: 20px
+				p
+					width: 225px
+					font-size: 13px
+	.second
+		h2
+			@include title
+		&__text
+			@include text
+		&__list
+		ul
+			li
+				font-size: 20px
+	.third
+		h2
+			@include title
+		&__text
+			@include text
+		&__about
+			font-size: 13px
+			width: 436px
+		&__avatars
+			div
+				img
+					margin-top: 10px
+	.fourth 
+		h2
+			@include title
+			color: #fff
+		p
+			@include text
+			color: #fff
+		&__search
+			input
+				width: 450px	
+	.fifth 
+		h2
+			@include title
+		&__text
+			@include text
+			width: 630px
+		&__form
+			.form__inputs
+				.input__name
+					font-size: 15px
+					width: 235px
+					height: 69px
+				.input__mail
+					font-size: 15px
+					width: 235px
+					height: 69px
+					margin-left: 54px
+			textarea 
+				font-size: 15px
+				height: 234px
+		&__contact
+			div
+				width: 231px
+				font-size: 14px
+@media (max-width: 991px)
+	@mixin btn
+		display: block
+		max-width: 226px
+		border: 1px solid #ff2d2d
+		border-radius: 8px
+		padding: 20px 0
+		text-align: center
+		font-size: 18px
+		font-weight: 700
+		text-transform: none
+		margin: 0 auto
+		margin-top: 35px
+
+	@mixin title 
+		text-align: center
+		font-size: 28px
+		font-weight: 700
+		color: #000
+
+	@mixin text 
+		text-align: center
+		font-size: 13px
+		font-weight: 400
+		color: #000
+
+	header
+		h1
+			font-size: 46px
+			text-align: center
+		.header__text
+			font-size: 13px
+			text-align: center
+		.button 
+			@include btn
+			
+		.video
+			display: block
+			margin: 60px auto
+
+	.first 
+		h2
+			@include title
+		&__text
+			@include text
+		&__button
+			@include btn
+			margin-bottom: 60px
+		&__skill
+			margin: 0 auto
+			div
+				margin: 0 auto
+				img
+					margin-top: 20px
+					max-width: 44px
+				p
+					width: 257px
+					font-size: 16px
+					font-weight: 400
+					margin-bottom: 20px
+	.second
+		display: none
+	.third
+		h2
+			@include title
+		&__text
+			@include text
+			margin: 0 auto
+			&:after
+				margin: 30px auto
+				margin-bottom: 90px
+		&__about
+			width: 330px
+		&__list
+			ul
+				li
+					a
+						font-size: 15px
+		&__avatars
+			div
+				height: 182px
+	.fifth
+		h2
+			@include title
+		&__text
+			@include text
+			margin: 0 auto
+			&:after
+				margin: 30px auto
+				margin-bottom: 90px
+		&__form
+			.form__inputs
+				.input__name
+					font-size: 15px
+					width: 315px
+					height: 69px
+				.input__mail
+					font-size: 15px
+					width: 315px
+					height: 69px
+					margin-left: 54px
+			textarea 
+				font-size: 15px
+				height: 234px
+			.form__block
+				input
+					margin-bottom: 50px
+	
+@media (max-width: 767px)
+	.third
+		&__avatar
+			margin: 0 auto
+			img
+				display: block
+				margin: 0 auto
+		h3
+			text-align: center
+		&__about
+			text-align: center
+			margin: 0 auto
+		&__list
+			ul
+				margin-top: 30px
+				justify-content: center
+		&__avatars
+			div
+				margin: 0 auto
+				margin-bottom: 80px
+				img
+					margin-top: 0
+	.fifth
+		&__text
+			@include text
+			margin: 0 auto
+			width: 100%
+			&:after
+				margin: 30px auto
+				margin-bottom: 90px
+		&__form
+			.form__inputs
+				.input__name
+					width: 100%
+				.input__mail
+					width: 100%
+					margin-left: 0
+	footer
+		p
+			font-size: 12px
+
+		.footer__list
+			ul
+				width: 70%
+				margin: 0 auto
+@media (max-width: 575px)
+	header
+		.nav
+			.menu__main
+				display: none
+			.hamburger
+				display: block
+				.hamburger__onctive 
+					display: none
+				.hamburger-active 
+					span 
+						margin-bottom: -2px
+
+				.hamburger-active 
+					span:nth-child(1) 
+						transform: translateY(3px) rotate(45deg)
+					span:nth-child(2) 
+						display: none
+					span:nth-child(3) 
+						transform: translateY(3px) rotate(-45deg)
+						
+		
+		h1
+			font-size: 30px
+	.third
+		h3
+			font-size: 20px
+		&__text
+			width: 100%
+		&__avatar
+			width: 80%
+		&__about
+			width: 100%
+		&__list
+			display: none
+		&__avatars
+			margin-top: 30px
+	.fourth
+		display: none
+	footer
+		.footer__list
+			ul
+				width: 74%
+				margin: 0 auto
+
