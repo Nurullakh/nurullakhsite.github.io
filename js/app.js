@@ -39,11 +39,11 @@ class Team {
 		this.name = ['nurullakh akhmedov','muhammadsaid abdulaev','ibrakhim kamalov','ramazan ukaev','ali kamalov']
 		this.img = 
 		[
-		'file:///C:/Users/User/Desktop/web/website%203/img/avatar1.jpg',
-		'file:///C:/Users/User/Desktop/web/website%203/img/avatar2.jpg', 
-		'file:///C:/Users/User/Desktop/web/website%203/img/avatar3.jpg', 
-		'file:///C:/Users/User/Desktop/web/website%203/img/avatar4.jpg', 
-		'file:///C:/Users/User/Desktop/web/website%203/img/avatar5.jpg'
+		'img/avatar1.jpg',
+		'img/avatar2.jpg', 
+		'img/avatar3.jpg', 
+		'img/avatar4.jpg', 
+		'img/avatar5.jpg'
 		]
 		this.index = 0
 	}
@@ -52,30 +52,30 @@ class Team {
 			this.avatar.src = e.target.src
 			e.target.src = this.img[0]
 			++this.index
-			if (this.img[0] === this.avatar.src) {
+			if (this.avatar.src.includes('avatar1')) {
 				this.nameStart.innerText = this.name[0]
-			} else if (this.img[1] === this.avatar.src) {
+			} else if (this.avatar.src.includes('avatar2')) {
 				this.nameStart.innerText = this.name[1]
-			} else if (this.img[2] === this.avatar.src) {
+			} else if (this.avatar.src.includes('avatar3')) {
 				this.nameStart.innerText = this.name[2]
-			} else if (this.img[3] === this.avatar.src) {
+			} else if (this.avatar.src.includes('avatar4')) {
 				this.nameStart.innerText = this.name[3]
-			} else if (this.img[4] === this.avatar.src) {
+			} else if (this.avatar.src.includes('avatar5')) {
 				this.nameStart.innerText = this.name[4]
 			} 
 		} else {
 			let img = e.target.src
 			e.target.src = this.avatar.src
 			this.avatar.src = img
-			if (this.img[0] === this.avatar.src) {
+			if (this.avatar.src.includes('avatar1')) {
 				this.nameStart.innerText = this.name[0]
-			} else if (this.img[1] === this.avatar.src) {
+			} else if (this.avatar.src.includes('avatar2')) {
 				this.nameStart.innerText = this.name[1]
-			} else if (this.img[2] === this.avatar.src) {
+			} else if (this.avatar.src.includes('avatar3')) {
 				this.nameStart.innerText = this.name[2]
-			} else if (this.img[3] === this.avatar.src) {
+			} else if (this.avatar.src.includes('avatar4')) {
 				this.nameStart.innerText = this.name[3]
-			} else if (this.img[4] === this.avatar.src) {
+			} else if (this.avatar.src.includes('avatar5')) {
 				this.nameStart.innerText = this.name[4]
 			}
 
